@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 body {
   background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
 }
 
 .card-container .card {
@@ -11,9 +13,29 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  width: 700px;
+  width: 1000px;
   height: 500px;
   -webkit-transform: translate(0%, 50%);
           transform: translate(0%, 50%);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.card-container .card .option-side {
+  width: 500px;
+}
+
+.card-container .card .option-side .content-container {
+  padding: 15px;
+}
+
+.card-container .card .result-side {
+  background-color: #00494d;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.card-container .card .result-side .content-container {
+  padding: 30px;
 }
 /*# sourceMappingURL=app.component.css.map */
