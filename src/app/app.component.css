@@ -1,0 +1,19 @@
+body {
+  background-color: #c5e4e7;
+}
+
+.card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+}
+/*# sourceMappingURL=app.component.css.map */

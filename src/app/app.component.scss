@@ -1,0 +1,14 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+.card-container {
+  .card {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    transform: translate(0%, 50%);
+  }
+}
