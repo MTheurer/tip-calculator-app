@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-$string-cyan: hsl(172, 67%, 45%);
+$striking-cyan: hsl(172, 67%, 45%);
 $very-dk-cyan: hsl(183, 100%, 15%);
 $dk-gray-cyan1: hsl(186, 14%, 43%);
 $dk-gray-cyan2: hsl(184, 14%, 56%);
@@ -27,6 +27,35 @@ body {
       width: 500px;
       .content-container {
         padding: 15px;
+        max-width: 450px;
+        p {
+          color: $dk-gray-cyan2;
+          font-weight: 700;
+        }
+        .tip-percentages {
+          margin-bottom: 40px;
+          margin-top: 40px;
+          button {
+            width: 130px;
+            height: 50px;
+            margin: 5px;
+            background-color: $very-dk-cyan;
+            color: $white;
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            font-family: "Space Mono", monospace;
+            font-weight: 700;
+          }
+        }
+        .input-box {
+          background-color: $lt-gray-cyan2;
+          height: 50px;
+          border-radius: 7px;
+          img {
+            padding: 15px;
+          }
+        }
       }
     }
     .result-side {
@@ -35,6 +64,53 @@ body {
       border-radius: 20px;
       .content-container {
         padding: 30px;
+        .output-tip {
+          display: flex;
+          justify-content: space-between;
+          .text {
+            color: $white;
+            font-weight: 700;
+            sub {
+              color: $dk-gray-cyan2;
+            }
+          }
+          .tip-amount-box {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+          }
+        }
+        .output-total {
+          display: flex;
+          justify-content: space-between;
+          .text {
+            color: $white;
+            font-weight: 700;
+            sub {
+              color: $dk-gray-cyan2;
+            }
+          }
+          .total-amount-box {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+          }
+        }
+        .reset-button {
+          padding: 20px;
+          margin-top: 200px;
+          button {
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: $striking-cyan;
+            font-size: 20px;
+            font-family: "Space Mono", monospace;
+            font-weight: 700;
+            color: $very-dk-cyan;
+          }
+        }
       }
     }
   }

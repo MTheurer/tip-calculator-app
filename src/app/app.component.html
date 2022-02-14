@@ -9,22 +9,48 @@
         <div class="option-side">
           <div class="content-container">
             <p>Bill</p>
-            <div class="input-box">$</div>
-            <p>Select Tip %</p>
+            <div class="input-box">
+              <img src="/images/icon-dollar.svg" alt="Dollar Sign" />
+            </div>
+
             <div class="tip-percentages">
-              <app-button></app-button>
+              <p>Select Tip %</p>
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+              <button>25%</button>
+              <button>50%</button>
+              <button>Custom</button>
             </div>
             <p>Number of People</p>
-            <div class="input-box"></div>
+            <div class="input-box">
+              <img src="/images/icon-person.svg" alt="Person Icon" />
+            </div>
           </div>
         </div>
         <div class="result-side">
           <div class="content-container">
-            <p>Tip Amount</p>
-            <p>/ person</p>
-            <p>Total</p>
-            <p>/ person</p>
-            <button>Reset</button>
+            <div class="output-tip">
+              <div class="text">
+                <p>
+                  Tip Amount <br />
+                  <sub>/ person</sub>
+                </p>
+              </div>
+              <div class="tip-amount-box"></div>
+            </div>
+            <div class="output-total">
+              <div class="text">
+                <p>
+                  Total <br />
+                  <sub>/ person</sub>
+                </p>
+              </div>
+              <div class="total-amount-box"></div>
+            </div>
+            <div class="reset-button">
+              <button>RESET</button>
+            </div>
           </div>
         </div>
       </div>

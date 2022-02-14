@@ -27,6 +27,40 @@ body {
 
 .card-container .card .option-side .content-container {
   padding: 15px;
+  max-width: 450px;
+}
+
+.card-container .card .option-side .content-container p {
+  color: #7f9c9f;
+  font-weight: 700;
+}
+
+.card-container .card .option-side .content-container .tip-percentages {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.card-container .card .option-side .content-container .tip-percentages button {
+  width: 130px;
+  height: 50px;
+  margin: 5px;
+  background-color: #00494d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.card-container .card .option-side .content-container .input-box {
+  background-color: #f4fafa;
+  height: 50px;
+  border-radius: 7px;
+}
+
+.card-container .card .option-side .content-container .input-box img {
+  padding: 15px;
 }
 
 .card-container .card .result-side {
@@ -37,5 +71,70 @@ body {
 
 .card-container .card .result-side .content-container {
   padding: 30px;
+}
+
+.card-container .card .result-side .content-container .output-tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-container .card .result-side .content-container .output-tip .text {
+  color: white;
+  font-weight: 700;
+}
+
+.card-container .card .result-side .content-container .output-tip .text sub {
+  color: #7f9c9f;
+}
+
+.card-container .card .result-side .content-container .output-tip .tip-amount-box {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.card-container .card .result-side .content-container .output-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-container .card .result-side .content-container .output-total .text {
+  color: white;
+  font-weight: 700;
+}
+
+.card-container .card .result-side .content-container .output-total .text sub {
+  color: #7f9c9f;
+}
+
+.card-container .card .result-side .content-container .output-total .total-amount-box {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.card-container .card .result-side .content-container .reset-button {
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.card-container .card .result-side .content-container .reset-button button {
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #26c0ab;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #00494d;
 }
 /*# sourceMappingURL=app.component.css.map */
