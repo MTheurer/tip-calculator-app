@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="/src/app/app.component.css">
-</head>
-<body>
-  <div class="card-container">
-    <div class="card">
-      <div class="option-side">
-        <div class="content-container">
-          <p>Bill</p>
-          <div class="input-box">$</div>
-          <p>Select Tip %</p>
-          <div class="tip-percentages">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <button>Custom</button>
+  <head>
+    <link rel="stylesheet" href="/src/app/app.component.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <div class="option-side">
+          <div class="content-container">
+            <p>Bill</p>
+            <div class="input-box">$</div>
+            <p>Select Tip %</p>
+            <div class="tip-percentages">
+              <app-button></app-button>
+            </div>
+            <p>Number of People</p>
+            <div class="input-box"></div>
           </div>
-          <p>Number of People</p>
-          <div class="input-box"></div>
         </div>
-      </div>
-      <div class="result-side">
-        <div class="content-container">
-          <p>Tip Amount</p>
-          <p>/ person</p>
-          <p>Total</p>
-          <p>/ person</p>
-          <button>Reset</button>
+        <div class="result-side">
+          <div class="content-container">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+            <p>Total</p>
+            <p>/ person</p>
+            <button>Reset</button>
+          </div>
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
