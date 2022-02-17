@@ -11,6 +11,9 @@ $white: hsl(0, 0%, 100%);
 body {
   background-color: $lt-gray-cyan1;
   font-family: "Space Mono", monospace;
+  .logo {
+    position: fixed;
+  }
 }
 .card-container {
   .card {
@@ -47,6 +50,10 @@ body {
             font-family: "Space Mono", monospace;
             font-weight: 700;
           }
+          .custom {
+            background-color: $lt-gray-cyan2;
+            color: $dk-gray-cyan2;
+          }
         }
         .input-box {
           background-color: $lt-gray-cyan2;
@@ -63,7 +70,8 @@ body {
       width: 500px;
       border-radius: 20px;
       .content-container {
-        padding: 30px;
+        padding: 50px;
+        margin-top: 20px;
         .output-tip {
           display: flex;
           justify-content: space-between;
@@ -75,9 +83,11 @@ body {
             }
           }
           .tip-amount-box {
-            width: 10px;
-            height: 10px;
-            background-color: black;
+            width: 200px;
+            height: 60px;
+            margin-top: 15px;
+            border: solid $striking-cyan;
+            border-radius: 10px;
           }
         }
         .output-total {
@@ -91,14 +101,15 @@ body {
             }
           }
           .total-amount-box {
-            width: 10px;
-            height: 10px;
-            background-color: black;
+            width: 200px;
+            height: 60px;
+            margin-top: 15px;
+            border: solid $striking-cyan;
+            border-radius: 10px;
           }
         }
         .reset-button {
-          padding: 20px;
-          margin-top: 200px;
+          margin-top: 175px;
           button {
             width: 400px;
             height: 50px;

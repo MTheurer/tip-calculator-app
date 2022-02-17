@@ -4,6 +4,10 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+body .logo {
+  position: fixed;
+}
+
 .card-container .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +57,11 @@ body {
   font-weight: 700;
 }
 
+.card-container .card .option-side .content-container .tip-percentages .custom {
+  background-color: #f4fafa;
+  color: #7f9c9f;
+}
+
 .card-container .card .option-side .content-container .input-box {
   background-color: #f4fafa;
   height: 50px;
@@ -70,7 +79,8 @@ body {
 }
 
 .card-container .card .result-side .content-container {
-  padding: 30px;
+  padding: 50px;
+  margin-top: 20px;
 }
 
 .card-container .card .result-side .content-container .output-tip {
@@ -92,9 +102,11 @@ body {
 }
 
 .card-container .card .result-side .content-container .output-tip .tip-amount-box {
-  width: 10px;
-  height: 10px;
-  background-color: black;
+  width: 200px;
+  height: 60px;
+  margin-top: 15px;
+  border: solid #26c0ab;
+  border-radius: 10px;
 }
 
 .card-container .card .result-side .content-container .output-total {
@@ -116,14 +128,15 @@ body {
 }
 
 .card-container .card .result-side .content-container .output-total .total-amount-box {
-  width: 10px;
-  height: 10px;
-  background-color: black;
+  width: 200px;
+  height: 60px;
+  margin-top: 15px;
+  border: solid #26c0ab;
+  border-radius: 10px;
 }
 
 .card-container .card .result-side .content-container .reset-button {
-  padding: 20px;
-  margin-top: 200px;
+  margin-top: 175px;
 }
 
 .card-container .card .result-side .content-container .reset-button button {

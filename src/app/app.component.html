@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="/src/app/app.component.css" />
   </head>
   <body>
+    <div class="logo">
+      <img src="/images/logo.svg" alt="Splitter Logo" />
+    </div>
+    <app-button></app-button>
     <div class="card-container">
       <div class="card">
         <div class="option-side">
@@ -12,7 +16,6 @@
             <div class="input-box">
               <img src="/images/icon-dollar.svg" alt="Dollar Sign" />
             </div>
-
             <div class="tip-percentages">
               <p>Select Tip %</p>
               <button>5%</button>
@@ -20,7 +23,7 @@
               <button>15%</button>
               <button>25%</button>
               <button>50%</button>
-              <button>Custom</button>
+              <button class="custom">Custom</button>
             </div>
             <p>Number of People</p>
             <div class="input-box">
