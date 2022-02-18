@@ -15,6 +15,10 @@ $white: hsl(0, 0%, 100%);
   width: 100%;
   background-color: $lt-gray-cyan1;
   font-family: "Space Mono", monospace;
+  .logo {
+    transform: translate(45%, 350%);
+    position: relative;
+  }
 }
 
 .card {
@@ -56,9 +60,18 @@ $white: hsl(0, 0%, 100%);
           color: $very-dk-cyan;
           cursor: pointer;
         }
-        .custom {
+        .custom-button {
           background-color: $lt-gray-cyan2;
           color: $dk-gray-cyan2;
+          width: 130px;
+          height: 50px;
+          margin: 5px;
+          border: none;
+          border-radius: 5px;
+          font-size: 25px;
+          font-family: "Space Mono", monospace;
+          font-weight: 700;
+          text-align: center;
         }
       }
       .input-box input {

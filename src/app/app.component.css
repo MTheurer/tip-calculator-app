@@ -8,6 +8,12 @@
   font-family: "Space Mono", monospace;
 }
 
+.page .logo {
+  -webkit-transform: translate(45%, 350%);
+          transform: translate(45%, 350%);
+  position: relative;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,9 +63,24 @@
   font-weight: 700;
 }
 
-.card .option-side .content-container .tip-percentages .custom {
+.card .option-side .content-container .tip-percentages button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+
+.card .option-side .content-container .tip-percentages .custom-button {
   background-color: #f4fafa;
   color: #7f9c9f;
+  width: 130px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-align: center;
 }
 
 .card .option-side .content-container .input-box input {
@@ -68,6 +89,11 @@
   height: 50px;
   border-radius: 7px;
   width: 400px;
+  text-align: right;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #00494d;
 }
 
 .card .option-side .content-container .input-box input img {
