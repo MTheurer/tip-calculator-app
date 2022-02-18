@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-body {
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   background-color: #c5e4e7;
   font-family: "Space Mono", monospace;
 }
 
-body .logo {
-  position: fixed;
-}
-
-.card-container .card {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,26 +25,26 @@ body .logo {
   border-radius: 20px;
 }
 
-.card-container .card .option-side {
+.card .option-side {
   width: 500px;
 }
 
-.card-container .card .option-side .content-container {
+.card .option-side .content-container {
   padding: 15px;
   max-width: 450px;
 }
 
-.card-container .card .option-side .content-container p {
+.card .option-side .content-container p {
   color: #7f9c9f;
   font-weight: 700;
 }
 
-.card-container .card .option-side .content-container .tip-percentages {
+.card .option-side .content-container .tip-percentages {
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
-.card-container .card .option-side .content-container .tip-percentages button {
+.card .option-side .content-container .tip-percentages button {
   width: 130px;
   height: 50px;
   margin: 5px;
@@ -57,33 +57,35 @@ body .logo {
   font-weight: 700;
 }
 
-.card-container .card .option-side .content-container .tip-percentages .custom {
+.card .option-side .content-container .tip-percentages .custom {
   background-color: #f4fafa;
   color: #7f9c9f;
 }
 
-.card-container .card .option-side .content-container .input-box {
+.card .option-side .content-container .input-box input {
   background-color: #f4fafa;
+  border: none;
   height: 50px;
   border-radius: 7px;
+  width: 400px;
 }
 
-.card-container .card .option-side .content-container .input-box img {
+.card .option-side .content-container .input-box input img {
   padding: 15px;
 }
 
-.card-container .card .result-side {
+.card .result-side {
   background-color: #00494d;
   width: 500px;
   border-radius: 20px;
 }
 
-.card-container .card .result-side .content-container {
+.card .result-side .content-container {
   padding: 50px;
   margin-top: 20px;
 }
 
-.card-container .card .result-side .content-container .output-tip {
+.card .result-side .content-container .output-tip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,16 +94,16 @@ body .logo {
           justify-content: space-between;
 }
 
-.card-container .card .result-side .content-container .output-tip .text {
+.card .result-side .content-container .output-tip .text {
   color: white;
   font-weight: 700;
 }
 
-.card-container .card .result-side .content-container .output-tip .text sub {
+.card .result-side .content-container .output-tip .text sub {
   color: #7f9c9f;
 }
 
-.card-container .card .result-side .content-container .output-tip .tip-amount-box {
+.card .result-side .content-container .output-tip .tip-amount-box {
   width: 200px;
   height: 60px;
   margin-top: 15px;
@@ -109,7 +111,7 @@ body .logo {
   border-radius: 10px;
 }
 
-.card-container .card .result-side .content-container .output-total {
+.card .result-side .content-container .output-total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,16 +120,16 @@ body .logo {
           justify-content: space-between;
 }
 
-.card-container .card .result-side .content-container .output-total .text {
+.card .result-side .content-container .output-total .text {
   color: white;
   font-weight: 700;
 }
 
-.card-container .card .result-side .content-container .output-total .text sub {
+.card .result-side .content-container .output-total .text sub {
   color: #7f9c9f;
 }
 
-.card-container .card .result-side .content-container .output-total .total-amount-box {
+.card .result-side .content-container .output-total .total-amount-box {
   width: 200px;
   height: 60px;
   margin-top: 15px;
@@ -135,11 +137,11 @@ body .logo {
   border-radius: 10px;
 }
 
-.card-container .card .result-side .content-container .reset-button {
+.card .result-side .content-container .reset-button {
   margin-top: 175px;
 }
 
-.card-container .card .result-side .content-container .reset-button button {
+.card .result-side .content-container .reset-button button {
   width: 400px;
   height: 50px;
   border: none;

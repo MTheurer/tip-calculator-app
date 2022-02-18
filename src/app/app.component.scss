@@ -8,119 +8,131 @@ $lt-gray-cyan1: hsl(185, 41%, 84%);
 $lt-gray-cyan2: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 
-body {
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   background-color: $lt-gray-cyan1;
   font-family: "Space Mono", monospace;
-  .logo {
-    position: fixed;
-  }
 }
-.card-container {
-  .card {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    background-color: $white;
-    width: 1000px;
-    height: 500px;
-    transform: translate(0%, 50%);
-    padding: 40px;
-    border-radius: 20px;
-    .option-side {
-      width: 500px;
-      .content-container {
-        padding: 15px;
-        max-width: 450px;
-        p {
-          color: $dk-gray-cyan2;
+
+.card {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: $white;
+  width: 1000px;
+  height: 500px;
+  transform: translate(0%, 50%);
+  padding: 40px;
+  border-radius: 20px;
+  .option-side {
+    width: 500px;
+    .content-container {
+      padding: 15px;
+      max-width: 450px;
+      p {
+        color: $dk-gray-cyan2;
+        font-weight: 700;
+      }
+      .tip-percentages {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        button {
+          width: 130px;
+          height: 50px;
+          margin: 5px;
+          background-color: $very-dk-cyan;
+          color: $white;
+          border: none;
+          border-radius: 5px;
+          font-size: 25px;
+          font-family: "Space Mono", monospace;
           font-weight: 700;
         }
-        .tip-percentages {
-          margin-bottom: 40px;
-          margin-top: 40px;
-          button {
-            width: 130px;
-            height: 50px;
-            margin: 5px;
-            background-color: $very-dk-cyan;
-            color: $white;
-            border: none;
-            border-radius: 5px;
-            font-size: 25px;
-            font-family: "Space Mono", monospace;
-            font-weight: 700;
-          }
-          .custom {
-            background-color: $lt-gray-cyan2;
-            color: $dk-gray-cyan2;
-          }
+        button:hover {
+          background-color: $striking-cyan;
+          color: $very-dk-cyan;
+          cursor: pointer;
         }
-        .input-box {
+        .custom {
           background-color: $lt-gray-cyan2;
-          height: 50px;
-          border-radius: 7px;
-          img {
-            padding: 15px;
-          }
+          color: $dk-gray-cyan2;
+        }
+      }
+      .input-box input {
+        background-color: $lt-gray-cyan2;
+        border: none;
+        height: 50px;
+        border-radius: 7px;
+        width: 400px;
+        text-align: right;
+        font-size: 25px;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        color: $very-dk-cyan;
+        img {
+          padding: 15px;
         }
       }
     }
-    .result-side {
-      background-color: $very-dk-cyan;
-      width: 500px;
-      border-radius: 20px;
-      .content-container {
-        padding: 50px;
-        margin-top: 20px;
-        .output-tip {
-          display: flex;
-          justify-content: space-between;
-          .text {
-            color: $white;
-            font-weight: 700;
-            sub {
-              color: $dk-gray-cyan2;
-            }
-          }
-          .tip-amount-box {
-            width: 200px;
-            height: 60px;
-            margin-top: 15px;
-            border: solid $striking-cyan;
-            border-radius: 10px;
+  }
+  .result-side {
+    background-color: $very-dk-cyan;
+    width: 500px;
+    border-radius: 20px;
+    .content-container {
+      padding: 50px;
+      margin-top: 20px;
+      .output-tip {
+        display: flex;
+        justify-content: space-between;
+        .text {
+          color: $white;
+          font-weight: 700;
+          sub {
+            color: $dk-gray-cyan2;
           }
         }
-        .output-total {
-          display: flex;
-          justify-content: space-between;
-          .text {
-            color: $white;
-            font-weight: 700;
-            sub {
-              color: $dk-gray-cyan2;
-            }
-          }
-          .total-amount-box {
-            width: 200px;
-            height: 60px;
-            margin-top: 15px;
-            border: solid $striking-cyan;
-            border-radius: 10px;
+        .tip-amount-box {
+          width: 200px;
+          height: 60px;
+          margin-top: 15px;
+          border: solid $striking-cyan;
+          border-radius: 10px;
+        }
+      }
+      .output-total {
+        display: flex;
+        justify-content: space-between;
+        .text {
+          color: $white;
+          font-weight: 700;
+          sub {
+            color: $dk-gray-cyan2;
           }
         }
-        .reset-button {
-          margin-top: 175px;
-          button {
-            width: 400px;
-            height: 50px;
-            border: none;
-            border-radius: 5px;
-            background-color: $striking-cyan;
-            font-size: 20px;
-            font-family: "Space Mono", monospace;
-            font-weight: 700;
-            color: $very-dk-cyan;
-          }
+        .total-amount-box {
+          width: 200px;
+          height: 60px;
+          margin-top: 15px;
+          border: solid $striking-cyan;
+          border-radius: 10px;
+        }
+      }
+      .reset-button {
+        margin-top: 175px;
+        button {
+          width: 400px;
+          height: 50px;
+          border: none;
+          border-radius: 5px;
+          background-color: $striking-cyan;
+          font-size: 20px;
+          font-family: "Space Mono", monospace;
+          font-weight: 700;
+          color: $very-dk-cyan;
         }
       }
     }
