@@ -7,18 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tip-calculator-app';
+  percent!: number;
+  customPercent!:number;
+  bill!: number;
+  people!: number;
 
-  togglePercent(){
-    console.log("percentage clicked")
-  }
-  getCustomPercent(percent:string){
+  togglePercent(percent:number){
+    this.percent = percent;
     console.log(percent);
   }
-  getBillTotal(bill:string){
+  getCustomPercent(customPercent:number){
+    this.customPercent = customPercent;
+    console.log(customPercent);
+  }
+  getBillTotal(bill:number){
+    this.bill = bill;
   console.log(bill);
   }
 
-  getTotalPeople(people:string){
+  getTotalPeople(people:number){
+    this.people = people;
     console.log(people);
   }
 
