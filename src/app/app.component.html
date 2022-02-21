@@ -8,21 +8,37 @@
         <p>Bill</p>
         <div class="input-box">
           <img src="assets/images/icon-dollar.svg" alt="Dollar Sign" />
-          <input type="text" value="" />
+          <input
+            type="text"
+            placeholder="0.00"
+            #billbox
+            (keyup)="getBillTotal(billbox.value)"
+          />
         </div>
         <div class="tip-percentages">
           <p>Select Tip %</p>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input class="custom-button" type="text" value="Custom" />
+          <app-button (btnClick)="togglePercent()" text="5%"></app-button>
+          <app-button (btnClick)="togglePercent()" text="10%"></app-button>
+          <app-button (btnClick)="togglePercent()" text="15%"></app-button>
+          <app-button (btnClick)="togglePercent()" text="25%"></app-button>
+          <app-button (btnClick)="togglePercent()" text="50%"></app-button>
+          <input
+            class="custom-button"
+            type="text"
+            placeholder="Custom"
+            #custombox
+            (keyup)="getCustomPercent(custombox.value)"
+          />
         </div>
         <p>Number of People</p>
         <div class="input-box">
           <img src="assets/images/icon-person.svg" alt="Person Icon" />
-          <input type="text" value="" />
+          <input
+            type="text"
+            placeholder="0"
+            #peoplebox
+            (keyup)="getTotalPeople(peoplebox.value)"
+          />
         </div>
       </div>
     </div>
@@ -53,3 +69,4 @@
     </div>
   </div>
 </div>
+<script src="./script.ts"></script>

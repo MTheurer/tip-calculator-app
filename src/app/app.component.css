@@ -50,25 +50,6 @@
   margin-top: 40px;
 }
 
-.card .option-side .content-container .tip-percentages button {
-  width: 130px;
-  height: 50px;
-  margin: 5px;
-  background-color: #00494d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 25px;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-}
-
-.card .option-side .content-container .tip-percentages button:hover {
-  background-color: #26c0ab;
-  color: #00494d;
-  cursor: pointer;
-}
-
 .card .option-side .content-container .tip-percentages .custom-button {
   background-color: #f4fafa;
   color: #7f9c9f;

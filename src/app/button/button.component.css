@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=button.component.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.button-style {
+  width: 130px;
+  height: 50px;
+  margin: 5px;
+  background-color: #00494d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+/*# sourceMappingURL=button.component.css.map */
