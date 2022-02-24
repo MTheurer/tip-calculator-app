@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tip-calculator-app';
+
   percent!: number;
   customPercent!:number;
   bill!: number;
@@ -14,6 +15,7 @@ export class AppComponent {
 
   tipAmount!: string;
   totalPerPerson!:string;
+
 
   formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -45,5 +47,11 @@ export class AppComponent {
   getTotalPeople(people:number){
     this.people = people;
     this.calculateTotals()
+  }
+  
+  reset(){
+
+    this.tipAmount = ""
+    this.totalPerPerson = ""
   }
 }
