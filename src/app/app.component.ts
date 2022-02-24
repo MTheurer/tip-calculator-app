@@ -10,29 +10,40 @@ export class AppComponent {
   percent!: number;
   customPercent!:number;
   bill!: number;
-  people!: number;
+  people: number = 1;
+
+  tipAmount!: string;
+  totalPerPerson!:string;
+
+  formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  })
+
+  calculateTotals(){
+    let billPerPerson = this.bill/this.people;
+    let tipAmount = (billPerPerson)*(this.percent/100);
+    let totalPerPerson = billPerPerson + tipAmount;
+
+    let percent = this.percent
+    this.tipAmount = this.formatter.format(tipAmount);
+    this.totalPerPerson = this.formatter.format(totalPerPerson);
+  }
 
   togglePercent(percent:number){
     this.percent = percent;
-    console.log(percent);
+    this.calculateTotals()
   }
   getCustomPercent(customPercent:number){
-    this.customPercent = customPercent;
-    console.log(customPercent);
+    //implement custom percent
   }
   getBillTotal(bill:number){
     this.bill = bill;
-  console.log(bill);
+    this.calculateTotals()
   }
-
+//default value 1
   getTotalPeople(people:number){
     this.people = people;
-    console.log(people);
+    this.calculateTotals()
   }
-
-  /*calculateTotals(){
-    let billPerPerson = bill/people
-    let tipAmount = billPerPerson*percent
-    let totalPerPerson = billPerPerson + tipAmount
-  }*/
 }

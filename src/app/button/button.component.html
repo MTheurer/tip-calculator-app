@@ -1,3 +1,7 @@
-<button class="button-style" (click)="onClick()">
+<button
+  class="button-style"
+  (click)="emit()"
+  [ngClass]="{ 'button-style': toggle, 'button-onclick': !toggle }"
+>
   {{ text }}
 </button>

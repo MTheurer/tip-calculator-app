@@ -35,7 +35,7 @@
           <img src="assets/images/icon-person.svg" alt="Person Icon" />
           <input
             type="number"
-            placeholder="0"
+            placeholder="1+"
             #peoplebox
             (keyup)="getTotalPeople(+peoplebox.value)"
           />
@@ -51,7 +51,7 @@
               <sub>/ person</sub>
             </p>
           </div>
-          <div class="tip-amount-box"></div>
+          <div class="tip-amount-box">{{ tipAmount }}</div>
         </div>
         <div class="output-total">
           <div class="text">
@@ -60,7 +60,7 @@
               <sub>/ person</sub>
             </p>
           </div>
-          <div class="total-amount-box"></div>
+          <div class="total-amount-box">{{ totalPerPerson }}</div>
         </div>
         <div class="reset-button">
           <button>RESET</button>

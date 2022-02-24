@@ -11,12 +11,16 @@ export class ButtonComponent implements OnInit {
   @Input() text!: string;
   @Output() btnClick = new EventEmitter();
 
+  toggle = true;
+  status = "Enable";
+
   constructor() { }
 
   ngOnInit(): void {
   }
-onClick() {
+emit() {
   this.btnClick.emit();
-}
-
+  this.toggle = !this.toggle;
+    this.status = this.toggle ? "Enable" : "Disable";
+  }
 }
