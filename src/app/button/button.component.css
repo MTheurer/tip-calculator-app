@@ -14,6 +14,7 @@
 
 button:hover {
   cursor: pointer;
+  background-color: #c5e4e7;
 }
 
 .button-onclick {

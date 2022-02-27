@@ -80,6 +80,13 @@ input[type="number"] {
           padding: 15px;
         }
       }
+      .input-box input:focus {
+        outline-color: $striking-cyan;
+      }
+      .input-box input:hover {
+        border: solid;
+        border-color: $lt-gray-cyan1;
+      }
     }
   }
   .result-side {
@@ -139,6 +146,10 @@ input[type="number"] {
           font-family: "Space Mono", monospace;
           font-weight: 700;
           color: $very-dk-cyan;
+        }
+        button:hover {
+          cursor: pointer;
+          background-color: $lt-gray-cyan1;
         }
       }
     }

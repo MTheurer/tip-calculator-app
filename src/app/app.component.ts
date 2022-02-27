@@ -13,8 +13,8 @@ export class AppComponent {
   bill!: number;
   people: number = 1;
 
-  tipAmount!: string;
-  totalPerPerson!:string;
+  tipAmount: string = '$0.00';
+  totalPerPerson:string = '$0.00';
 
 
   formatter = new Intl.NumberFormat('en-US', {
@@ -50,8 +50,9 @@ export class AppComponent {
   }
   
   reset(){
-
-    this.tipAmount = ""
-    this.totalPerPerson = ""
+    this.bill = 0
+    this.people = 0
+    this.tipAmount = "$0.00"
+    this.totalPerPerson = "$0.00"
   }
 }

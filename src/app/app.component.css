@@ -88,6 +88,15 @@ input[type="number"] {
   padding: 15px;
 }
 
+.card .option-side .content-container .input-box input:focus {
+  outline-color: #26c0ab;
+}
+
+.card .option-side .content-container .input-box input:hover {
+  border: solid;
+  border-color: #c5e4e7;
+}
+
 .card .result-side {
   background-color: #00494d;
   width: 500px;
@@ -167,6 +176,11 @@ input[type="number"] {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   color: #00494d;
+}
+
+.card .result-side .content-container .reset-button button:hover {
+  cursor: pointer;
+  background-color: #c5e4e7;
 }
 
 @media only screen and (max-width: 820px) {
