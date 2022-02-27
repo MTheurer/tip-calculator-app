@@ -89,7 +89,7 @@ input[type="number"] {
 }
 
 .card .option-side .content-container .input-box input:focus {
-  outline-color: blue;
+  outline-color: #26c0ab;
 }
 
 .card .option-side .content-container .input-box input:hover {

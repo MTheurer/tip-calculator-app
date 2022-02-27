@@ -81,7 +81,7 @@ input[type="number"] {
         }
       }
       .input-box input:focus {
-        outline-color: blue;
+        outline-color: $striking-cyan;
       }
       .input-box input:hover {
         border: solid;
