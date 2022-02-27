@@ -1,5 +1,8 @@
 # TipCalculatorApp
 
+A Tip Calculator based on the bill total, number of people, and percentage of tip. 
+The calculator presents the tip amount per person, along with a bill total including the tip, split between the desired number of people.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Development server
