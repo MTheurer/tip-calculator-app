@@ -21,6 +21,7 @@ export class AppComponent {
   totalPerPerson:string = '$0.00';
 
 
+
   formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
