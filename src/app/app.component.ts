@@ -11,6 +11,7 @@ export class AppComponent {
 
   @ViewChild('billbox') billbox!:any;
   @ViewChild('peoplebox') peoplebox!:any;
+  @ViewChild('custombox') custombox!:any;
 
   percent!: number;
   customPercent!:number;
@@ -40,9 +41,6 @@ export class AppComponent {
     this.percent = percent;
     this.calculateTotals()
   }
-  getCustomPercent(customPercent:number){
-    //implement custom percent
-  }
   getBillTotal(bill:number){
     this.bill = bill;
     this.calculateTotals()
@@ -56,6 +54,7 @@ export class AppComponent {
   reset(){
     this.billbox.nativeElement.value = ' ';
     this.peoplebox.nativeElement.value = ' ';
+    this.custombox.nativeElement.value = ' ';
     this.tipAmount = "$0.00"
     this.totalPerPerson = "$0.00"
   }
