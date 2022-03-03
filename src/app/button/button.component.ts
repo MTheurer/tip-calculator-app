@@ -11,6 +11,7 @@ export class ButtonComponent implements OnInit {
   @Input() text!: string;
   @Output() btnClick = new EventEmitter();
 
+
   toggle = true;
   status = "Enable";
 
@@ -18,9 +19,10 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 emit() {
   this.btnClick.emit();
-  this.toggle = !this.toggle;
-    this.status = this.toggle ? "Enable" : "Disable";
+  //this.toggle = !this.toggle;
+  //this.status = this.toggle ? "Enable" : "Disable";
   }
 }

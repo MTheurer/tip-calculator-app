@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tip-calculator-app';
+
+  @ViewChild('billbox') billbox!:any;
+  @ViewChild('peoplebox') peoplebox!:any;
 
   percent!: number;
   customPercent!:number;
@@ -50,8 +54,8 @@ export class AppComponent {
   }
   
   reset(){
-    this.bill = 0
-    this.people = 0
+    this.billbox.nativeElement.value = ' ';
+    this.peoplebox.nativeElement.value = ' ';
     this.tipAmount = "$0.00"
     this.totalPerPerson = "$0.00"
   }

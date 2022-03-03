@@ -17,18 +17,44 @@
         </div>
         <div class="tip-percentages">
           <p>Select Tip %</p>
-          <app-button (btnClick)="togglePercent(5)" text="5%"></app-button>
-          <app-button (btnClick)="togglePercent(10)" text="10%"></app-button>
-          <app-button (btnClick)="togglePercent(15)" text="15%"></app-button>
-          <app-button (btnClick)="togglePercent(25)" text="25%"></app-button>
-          <app-button (btnClick)="togglePercent(50)" text="50%"></app-button>
-          <input
-            class="custom-button"
-            type="text"
-            placeholder="Custom"
-            #custombox
-            (keyup)="getCustomPercent(+custombox.value)"
-          />
+          <mat-button-toggle-group>
+            <mat-button-toggle
+              ><app-button (btnClick)="togglePercent(5)" text="5%"></app-button
+            ></mat-button-toggle>
+            <mat-button-toggle
+              ><app-button
+                (btnClick)="togglePercent(10)"
+                text="10%"
+              ></app-button
+            ></mat-button-toggle>
+            <mat-button-toggle
+              ><app-button
+                (btnClick)="togglePercent(15)"
+                text="15%"
+              ></app-button
+            ></mat-button-toggle>
+            <mat-button-toggle
+              ><app-button
+                (btnClick)="togglePercent(25)"
+                text="25%"
+              ></app-button
+            ></mat-button-toggle>
+            <mat-button-toggle
+              ><app-button
+                (btnClick)="togglePercent(50)"
+                text="50%"
+              ></app-button
+            ></mat-button-toggle>
+            <mat-button-toggle>
+              <input
+                class="custom-button"
+                type="text"
+                placeholder="Custom"
+                #custombox
+                (keyup)="getCustomPercent(+custombox.value)"
+              />
+            </mat-button-toggle>
+          </mat-button-toggle-group>
         </div>
         <p>Number of People</p>
         <div class="input-box">

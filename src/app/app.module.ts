@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { ButtonComponent } from './button/button.component';
     ButtonComponent
   ],
   imports: [
-    BrowserModule
-  ],
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule],
   providers: [],
   bootstrap: [AppComponent]
 })
