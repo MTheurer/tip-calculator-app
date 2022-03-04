@@ -41,12 +41,6 @@ button:hover {
 @media only screen and (max-width: 600px) {
   .button-style,
   .button-onclick {
-    width: 170px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .button-style,
-  .button-onclick {
     width: 130px;
   }
 }
