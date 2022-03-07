@@ -1,6 +1,6 @@
 # TipCalculatorApp
 
-![Splitter](./images/Splitter.png)
+![Splitter](./assets/images/Splitter.png)
 
 A Tip Calculator based on the bill total, number of people, and percentage of tip.
 The calculator presents the tip amount per person, along with a bill total including the tip, split between the desired number of people.
