@@ -64,12 +64,9 @@ input[type="number"] {
             background-color: transparent;
             white-space: normal;
             border: none;
-            .mat-button-toggle-checked {
-              background-color: $striking-cyan;
-              color: $very-dk-cyan;
-            }
           }
         }
+
         .custom-button {
           background-color: $lt-gray-cyan2;
           color: $dk-gray-cyan2;
