@@ -22,7 +22,7 @@ export class ButtonComponent implements OnInit {
 
 emit() {
   this.btnClick.emit();
-  //this.toggle = !this.toggle;
-  //this.status = this.toggle ? "Enable" : "Disable";
+  this.toggle = !this.toggle;
+  this.status = this.toggle ? "Enable" : "Disable";
   }
 }
